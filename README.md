@@ -1,4 +1,4 @@
-# SOM8MP-Zephyr-Release-Packages
+# Summit-SOM-Zephyr-Release-Packages
 
 ## Cloning Firmware
 
@@ -22,9 +22,9 @@ Once `west` is installed, clone this repository using `west init` and `west upda
 
 ```
 # Checkout the manifest at a given release using the format below:
-# west init -m https://github.com/LairdCP/SOM8MP-Zephyr-Release-Packages.git --mr <TAG_NAME> --mf <MANIFEST_FILE>
-# For example, for the 0.0.0.11 release:
-west init -m https://github.com/LairdCP/SOM8MP-Zephyr-Release-Packages.git --mr SUMMIT-ZEPHYR-0.0.0.11 --mf m7_0.0.0.11.yml
+# west init -m https://github.com/LairdCP/Summit-SOM-Zephyr-Release-Packages.git --mr <TAG_NAME> --mf <MANIFEST_FILE>
+# For example, for the 0.0.0.26 release:
+west init -m https://github.com/LairdCP/Summit-SOM-Zephyr-Release-Packages.git --mr SUMMIT-ZEPHYR-0.0.0.26 --mf summit-mcu-demos_0.0.0.26.yml
 
 # Now, pull all the source described in the manifest
 west update
