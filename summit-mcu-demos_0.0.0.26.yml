@@ -1,0 +1,60 @@
+manifest:
+  remotes:
+    - name: LairdCP
+      url-base: https://github.com/LairdCP
+
+  # Please add items below based on alphabetical order.
+  # These dependencies may need updating if new features are added to the firmware.
+  projects:
+    - name: hal_nxp
+      path: modules/hal/nxp
+      revision: SUMMIT-ZEPHYR-0.0.0.26
+      remote: LairdCP
+    - name: rpmsg_lite
+      path: modules/rpmsg_lite
+      url: https://github.com/NXPmicro/rpmsg-lite
+      revision: c6b11f8ea44b049a11a35d8e08590d4532da1778
+    - name: Summit-SOM-Zephyr-Sample-Apps
+      path: Summit-SOM-Zephyr-Sample-Apps
+      revision: SUMMIT-ZEPHYR-0.0.0.26
+      remote: LairdCP
+    - name: zephyr
+      revision: SUMMIT-ZEPHYR-0.0.0.26
+      remote: LairdCP
+      import:
+        # In addition to the zephyr repository itself, also
+        # import the contents of zephyr/west.yml.
+        # Only the projects explicitly named in the
+        # following whitelist are imported.
+        #
+        # Note that the zephyr west extensions (like 'build', 'flash',
+        # 'debug', etc.) are automatically provided by this import, so
+        # there's no need to add a redundant west-commands: key for
+        # the zephyr project.
+        #
+        # Please keep this list sorted alphabetically.
+        name-allowlist:
+          - cmsis
+          - fatfs
+          - libmetal
+          - littlefs
+          - lvgl
+          - mbedtls
+          - mcumgr
+          - mipi-sys-t
+          - net-tools
+          - open-amp
+          - segger
+          - tinycbor
+          - tinycrypt
+    - name: zephyr_boards
+      path: boards/arm
+      revision: SUMMIT-ZEPHYR-0.0.0.26
+      remote: LairdCP
+    - name: zephyr_lib
+      path: modules/zephyr_lib
+      revision: SUMMIT-ZEPHYR-0.0.0.26
+      remote: LairdCP
+
+self:
+  path: Summit-SOM-Zephyr-Release-Packages.git
