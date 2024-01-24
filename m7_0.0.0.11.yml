@@ -14,8 +14,8 @@ manifest:
       path: modules/rpmsg_lite
       url: https://github.com/NXPmicro/rpmsg-lite
       revision: c6b11f8ea44b049a11a35d8e08590d4532da1778
-    - name: sample_apps_summit_som8mplus
-      path: sample_apps_summit_som8mplus
+    - name: Summit-SOM-Zephyr-Sample-Apps
+      path: Summit-SOM-Zephyr-Sample-Apps
       revision: SUMMIT-ZEPHYR-0.0.0.11
       remote: LairdCP
     - name: zephyr
@@ -57,4 +57,4 @@ manifest:
       remote: LairdCP
 
 self:
-  path: summit_som8mplus_firmware_manifest
+  path: Summit-SOM-Zephyr-Release-Packages.git
